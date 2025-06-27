@@ -4,6 +4,7 @@ import CarwashImage from "../../../assets/carwash-animation.svg";
 import BannerDrops from "../../../assets/banner-drops.webp";
 import { Images as IMAGES } from "./../../../shared/Images";
 import Image from "next/image";
+import CustomButton from "@/shared/CustomButton";
 
 const Banner = () => {
   return (
@@ -27,20 +28,32 @@ const Banner = () => {
                 We help keep <br /> your car clean <br />{" "}
                 <span className="text-[var(--color-secondary)]">Carwash</span>
               </h1>
-              <button className="custom-button">Read more</button>
+              <CustomButton>Read more</CustomButton>
             </div>
-            <div className="banner-image-wrapper absolute w-full animate-slide-in-right top-96 -translate-y-1/2 right-[-100%] z-50">
+            <div className="banner-image-wrapper absolute w-full animate-slide-in-right top-96 -translate-y-1/2 right-[-100%] z-50 pointer-events-none">
               <Image src={IMAGES.Banner} alt="Banner" />
             </div>
 
             <div className="absolute bg-[var(--color-primary)] p-8 right-1/12 top-0 rounded-3xl shadow-xl flex gap-4 border border-[var(--color-border)]">
               <div className="text-right flex flex-col justify-center gap-1">
-                <p className="text-white text-xl font-bold">Call and book an appointment</p>
-                <p className="text-[var(--color-secondary)] text-2xl font-bold">+61 (0) 383 766 284</p>
-                <p className="text-[var(--color-text)] font-bold">Monday - Friday: 8am - 5pm</p>
+                <p className="text-white text-xl font-bold">
+                  Call and book an appointment
+                </p>
+                <p className="text-[var(--color-secondary)] text-2xl font-bold">
+                  +61 (0) 383 766 284
+                </p>
+                <p className="text-[var(--color-text)] font-bold">
+                  Monday - Friday: 8am - 5pm
+                </p>
               </div>
               <div>
-                <Image src={IMAGES.Owner} alt="owner" width={60} height={60} className="rounded-full" />
+                <Image
+                  src={IMAGES.Owner}
+                  alt="owner"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
               </div>
             </div>
           </div>

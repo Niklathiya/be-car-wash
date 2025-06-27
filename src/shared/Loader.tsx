@@ -9,7 +9,7 @@ const Loader = ({ children }: { children: React.ReactNode }) => {
     setIsLoading(true);
   }, []);
 
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <svg

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section className="pt-32 pb-56">
+    <section className="pt-32 pb-56 overflow-hidden">
       <div className="custom-container">
         <div
           className="h-full w-full bg-no-repeat bg-bottom bg-contain"

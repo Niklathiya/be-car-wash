@@ -1,9 +1,5 @@
-import Banner from "@/components/home/banner/Banner";
+import HomeComponents from "@/components/home/HomeComponents";
 
 export default function Home() {
-  return (
-    <div className="bg-[var(--color-primary)]">
-      <Banner />
-    </div>
-  );
+  return <HomeComponents />;
 }

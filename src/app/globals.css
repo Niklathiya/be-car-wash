@@ -34,23 +34,12 @@ body {
 .custom-inner-container {
   max-width: 1620px;
   margin: 0 auto;
+  padding: 0 56px;
+}
+.custom-component-container {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 .custom-border {
   border-bottom: 1px solid var(--color-border);
-}
-.custom-button {
-  padding: 14px 28px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  font-size: 14px;
-  border-radius: 8px;
-  font-weight: 600;
-}
-.custom-button:hover {
-  background-color: transparent;
-  color: var(--color-secondary);
-  border: 1px solid var(--color-secondary);
 }

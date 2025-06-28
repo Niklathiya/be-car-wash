@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-30 bg-[var(--color-primary)] opacity-95 transition-all duration-500 ease-in-out custom-border ${
+      className={`fixed top-0 left-0 w-full z-100 bg-[var(--color-primary)] opacity-95 transition-all duration-500 ease-in-out custom-border ${
         scrolled ? "h-14" : "h-[90px]"
       }`}
     >

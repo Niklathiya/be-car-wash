@@ -8,7 +8,7 @@ import CustomButton from "@/shared/CustomButton";
 
 const Banner = () => {
   return (
-    <section className="pt-32 pb-56 overflow-hidden">
+    <section className="pt-32 pb-72 overflow-hidden">
       <div className="custom-container">
         <div
           className="h-full w-full bg-no-repeat bg-bottom bg-contain"
@@ -16,7 +16,7 @@ const Banner = () => {
             backgroundImage: `url(${CarwashImage.src})`,
           }}
         >
-          <div className="px-14 relative custom-inner-container">
+          <div className="relative custom-inner-container">
             <div className="flex items-center gap-4">
               <span className="w-8 h-0.5 bg-[var(--color-secondary)]"></span>
               <p className="text-[var(--color-secondary)] text-[12px] uppercase font-bold">

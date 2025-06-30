@@ -1,7 +1,7 @@
 import { cn } from "@/utils/utils";
 import React from "react";
 
-type Variant = "primary" | "secondary";
+type Variant = "primary" | "secondary" | "white" | "whiteTransparent";
 
 interface CustomButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -21,6 +21,16 @@ const variantClasses: Record<Variant, string> = {
     px-7 py-[14px] text-sm font-semibold rounded-lg transition-all
     bg-[var(--color-secondary)] text-[var(--color-primary)] border border-transparent cursor-pointer
     hover:bg-[#A5FDD4]
+  `,
+  white: `
+    px-7 py-[14px] text-sm font-semibold rounded-lg transition-all
+    bg-white text-[var(--color-primary)] border border-[var(--color-secondary)] cursor-pointer
+    hover:bg-[var(--color-secondary)]
+  `,
+  whiteTransparent: `
+    px-7 py-[14px] text-sm font-semibold rounded-lg transition-all
+    bg-transparent text-white border border-[var(--color-secondary)] cursor-pointer
+    hover:bg-[var(--color-secondary)] hover:text-[var(--color-primary)]
   `,
 };
 

@@ -4,21 +4,33 @@ import Banner from "./banner/Banner";
 import ServiceList from "./serviceList/ServiceList";
 import CarProtection from "./carProtection/CarProtection";
 import OurStrength from "./ourStrength/OurStrength";
+import OurWork from "./ourWork/OurWork";
+import SatisfiedCustomer from "./satisfiedCustomer/SatisfiedCustomer";
+import Pricing from "./pricing/Pricing";
 
 const HomeComponents = () => {
-  const ourStrengthRef = useRef<HTMLDivElement | null>(null);
+  const ourReviewRef = useRef<HTMLDivElement | null>(null);
 
   const handleScrollToStrength = () => {
-    ourStrengthRef.current?.scrollIntoView({ behavior: "smooth" });
+    ourReviewRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
   };
 
   return (
-    <div className="bg-[var(--color-primary)]">
-      <Banner />
-      <ServiceList />
-      <CarProtection onAboutClick={handleScrollToStrength} />
-      <OurStrength ref={ourStrengthRef} />
-    </div>
+    <>
+      <div className="bg-[var(--color-primary)]">
+        <Banner />
+        <ServiceList />
+        <CarProtection onAboutClick={handleScrollToStrength} />
+        <OurStrength />
+        <OurWork />
+        <SatisfiedCustomer ref={ourReviewRef} />
+      </div>
+      <Pricing />
+    </>
   );
 };
 

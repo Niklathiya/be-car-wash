@@ -16,6 +16,15 @@ import CleaningIconSecondary from "./../assets/cleaning-icon-secondary.svg";
 import PolishingIconSecondary from "./../assets/polishing-icon-secondary.svg";
 import WashingIconSecondary from "./../assets/washing-icon-secondary.svg";
 import CoatingIconSecondary from "./../assets/coating-icon-secondary.svg";
+import OurWork from "./../assets/our-work.webp";
+import OurWorkBefore from "./../assets/our-work-before.webp";
+import OurWorkAfter from "./../assets/our-work-after.webp";
+import SatisfiedCustomerBg from "./../assets/satisfied-customer-bg.webp";
+import BubblePlus from "./../assets/bubble-plus.svg";
+import Customer from "./../assets/customer.webp";
+import QuoteIcon from "./../assets/quote-icon.svg";
+import RefreshedCar from "./../assets/refreshed-car.svg";
+import PricingBg from "./../assets/pricing-bg.webp";
 
 export const Images = {
   Logo,
@@ -36,4 +45,13 @@ export const Images = {
   PolishingIconSecondary,
   WashingIconSecondary,
   CoatingIconSecondary,
+  OurWork,
+  OurWorkBefore,
+  OurWorkAfter,
+  SatisfiedCustomerBg,
+  BubblePlus,
+  Customer,
+  QuoteIcon,
+  RefreshedCar,
+  PricingBg
 };

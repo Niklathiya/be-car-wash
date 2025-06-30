@@ -1,11 +1,11 @@
 import Image from "next/image";
-import React, { forwardRef } from "react";
+import React from "react";
 import { Images as IMAGE } from "../../../shared/Images";
 import CustomIconBox from "@/shared/CustomIconBox";
 
-const OurStrength = forwardRef<HTMLDivElement>((props, ref) => {
+const OurStrength = () => {
   return (
-    <section ref={ref} className="custom-component-container">
+    <section className="custom-component-container pb-16">
       <p className="text-[var(--color-secondary)] text-[12px] uppercase font-bold text-center mb-6">
         becarwash
       </p>
@@ -117,8 +117,6 @@ const OurStrength = forwardRef<HTMLDivElement>((props, ref) => {
       `}</style>
     </section>
   );
-});
-
-OurStrength.displayName = "OurStrength";
+};
 
 export default OurStrength;

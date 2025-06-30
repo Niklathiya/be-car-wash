@@ -1,9 +1,10 @@
 import React from "react";
+import CopyrightFooter from "./CopyrightFooter";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-      <p>© 2025 My App</p>
+    <footer className="bg-white text-white text-center">
+      <CopyrightFooter />
     </footer>
   );
 };

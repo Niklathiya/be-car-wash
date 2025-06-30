@@ -1,0 +1,42 @@
+[
+  {
+    "plan": "Basic",
+    "price": 12,
+    "features": [
+      { "name": "Exterior washing", "active": true },
+      { "name": "Vacuum cleaning", "active": false },
+      { "name": "Interior wet cleaning", "active": false },
+      { "name": "Window wiping", "active": false }
+    ]
+  },
+  {
+    "plan": "Basic Cleaning",
+    "price": 24,
+    "features": [
+      { "name": "Exterior washing", "active": true },
+      { "name": "Vacuum cleaning", "active": true },
+      { "name": "Interior wet cleaning", "active": false },
+      { "name": "Window wiping", "active": false }
+    ]
+  },
+  {
+    "plan": "Premium Wash",
+    "price": 30,
+    "features": [
+      { "name": "Exterior washing", "active": true },
+      { "name": "Vacuum cleaning", "active": true },
+      { "name": "Interior wet cleaning", "active": true },
+      { "name": "Window wiping", "active": false }
+    ]
+  },
+  {
+    "plan": "Premium+",
+    "price": 59,
+    "features": [
+      { "name": "Exterior washing", "active": true },
+      { "name": "Vacuum cleaning", "active": true },
+      { "name": "Interior wet cleaning", "active": true },
+      { "name": "Window wiping", "active": true }
+    ]
+  }
+]

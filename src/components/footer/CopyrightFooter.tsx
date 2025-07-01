@@ -1,7 +1,8 @@
-'use client'
+"use client";
 import Link from "next/link";
 import React from "react";
-import { ChevronUp } from "lucide-react";
+import Image from "next/image";
+import { Images as IMAGE } from "@/shared/Images";
 
 const CopyrightFooter = () => {
   const handleScrollTop = () => {
@@ -11,9 +12,9 @@ const CopyrightFooter = () => {
   };
 
   return (
-    <footer className="w-full border-t border-[#ececec] py-8 bg-white">
+    <footer className="w-full border-t border-[#ececec] py-8 bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-all duration-500 ease-in-out">
       <div className="custom-component-container flex items-center justify-between">
-        <p className="text-[var(--color-primary)]">
+        <p>
           © 2025{" "}
           <Link
             href="/"
@@ -31,13 +32,24 @@ const CopyrightFooter = () => {
           </Link>
         </p>
 
-        <button
+        <div
           onClick={handleScrollTop}
-          className="border border-gray-400 rounded-md p-2 hover:bg-gray-100 transition cursor-pointer"
-          aria-label="Scroll to top"
+          className="relative cursor-pointer group"
         >
-          <ChevronUp className="w-4 h-4 text-gray-700" />
-        </button>
+          <Image
+            src={IMAGE.BackToTop}
+            alt="back to top"
+            className="w-[60px] h-[60px] object-contain"
+          />
+
+          <div
+            className="absolute top-[-50%] -translate-y-[-10%] rotate-180
+             opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100
+             transition-all duration-500 ease-in-out"
+          >
+            <Image src={IMAGE.Headlight} alt="light" />
+          </div>
+        </div>
       </div>
     </footer>
   );

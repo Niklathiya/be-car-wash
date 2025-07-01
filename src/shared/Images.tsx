@@ -25,6 +25,9 @@ import Customer from "./../assets/customer.webp";
 import QuoteIcon from "./../assets/quote-icon.svg";
 import RefreshedCar from "./../assets/refreshed-car.svg";
 import PricingBg from "./../assets/pricing-bg.webp";
+import Footer from "./../assets/footer.webp";
+import FooterLogo from "./../assets/footer-logo.svg";
+import BackToTop from "./../assets/back-to-top.png";
 
 export const Images = {
   Logo,
@@ -53,5 +56,8 @@ export const Images = {
   Customer,
   QuoteIcon,
   RefreshedCar,
-  PricingBg
+  PricingBg,
+  Footer,
+  FooterLogo,
+  BackToTop
 };

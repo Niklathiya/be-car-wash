@@ -28,6 +28,13 @@ import PricingBg from "./../assets/pricing-bg.webp";
 import Footer from "./../assets/footer.webp";
 import FooterLogo from "./../assets/footer-logo.svg";
 import BackToTop from "./../assets/back-to-top.png";
+import BannerAnimation from "./../assets/banner-animation.svg";
+import AboutBanner from "./../assets/about-banner.webp";
+import ShowServiceIcon from "./../assets/show-service-icon.svg";
+import AboutProtectionBg from "./../assets/about-protection.svg";
+import AboutProtectionIcon from "./../assets/about-protection-icon.svg";
+import AboutProtectionPoint from "./../assets/about-protection-point.webp";
+import AboutServicesIcon from "./../assets/about-service-icon.svg";
 
 export const Images = {
   Logo,
@@ -59,5 +66,12 @@ export const Images = {
   PricingBg,
   Footer,
   FooterLogo,
-  BackToTop
+  BackToTop,
+  BannerAnimation,
+  AboutBanner,
+  ShowServiceIcon,
+  AboutProtectionBg,
+  AboutProtectionIcon,
+  AboutProtectionPoint,
+  AboutServicesIcon,
 };

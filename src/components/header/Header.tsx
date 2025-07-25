@@ -43,8 +43,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-100 bg-[var(--color-primary)] opacity-95 transition-all duration-500 ease-in-out custom-border ${
-        scrolled ? "h-14" : "h-[90px]"
+      className={`fixed top-0 left-0 w-full opacity-95 z-1000 custom-border ${
+        scrolled ? "h-14 bg-[var(--color-primary)]" : "h-[90px] bg-[transparent]"
       }`}
     >
       <div className="custom-container flex items-center justify-between h-full">
